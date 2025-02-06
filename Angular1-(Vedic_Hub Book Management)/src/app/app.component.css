@@ -1,0 +1,164 @@
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #64b678, #478c5c);
+  padding: 2px 0;
+  text-align: center;
+  color: white;
+  z-index: 1000; /* Ensures it's above other content */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Content */
+.header-content {
+  max-width: 1000px; /* Matches main container */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Logo & Text */
+/* Logo Container */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  padding: 8px 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Logo Image */
+.logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 3px solid #ffd700; /* Gold border */
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Glowing effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Logo Text */
+.logo-text {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 1000;
+  color: rgba(249, 249, 245, 0.9); /* Gold color for a divine feel */
+  text-shadow: 2px 2px 4px rgba(139, 129, 129, 0.5);
+  font-family: 'Cinzel Decorative', serif; /* Ancient Sanskrit-like font */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.logo-img:hover {
+  transform: rotate(720deg) scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.9);
+}
+
+.logo-text:hover {
+  color: #ffcc00;
+  transform: scale(1.05);
+}
+
+
+/* Navigation */
+nav {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a.active {
+  background-color: #386643; /* Highlight color */
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background: #386643;
+  color: white;
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px 20px; /* Extra padding on top to prevent overlap with fixed header */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  main {
+    margin-top: 100px; /* Increases top padding for better spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* Increase top padding for small devices */
+  main {
+    padding-top: 140px; /* Prevents overlap on very small screens */
+  }
+}

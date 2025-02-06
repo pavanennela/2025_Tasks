@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.container form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.container form button {
+  padding: 10px 15px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container form button:hover {
+  background-color: #4cae4c;
+}
+.container #grocery-container.hidden {
+  display: none;
+}
+.container #grocery-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.container #grocery-container ul li {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+.container #grocery-container ul li span {
+  flex: 1;
+}
+.container #grocery-container ul li button {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.container #grocery-container ul li button.edit-btn {
+  background: #f0ad4e;
+  color: white;
+}
+.container #grocery-container ul li button.delete-btn {
+  background: #d9534f;
+  color: white;
+}
+.container #grocery-container #clear-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container #grocery-container #clear-btn:hover {
+  background-color: #c9302c;
+}/*# sourceMappingURL=style.css.map */

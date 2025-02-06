@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #C8C8C8;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+}
+
+.btn {
+  background: #DEDEDD;
+  color: #333333;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border-width: 1px;
+  display: inline-block;
+  background-image: linear-gradient(to right, rgb(89, 80, 90), rgb(90, 90, 90), rgb(116, 122, 121));
+}
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-6px);
+}
+
+.main_container {
+  width: 100%;
+}
+.main_container .main-nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+.main_container li {
+  list-style: none;
+}
+.main_container a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #444544;
+  background-color: #DEDEDD;
+  padding: 0.8em;
+  font-size: 1.1rem;
+  text-align: center;
+  border-style: outset;
+  transition: all 0.4s;
+  box-shadow: 0px 1px 5px #5B5A5B;
+  border-style: none;
+  transition: all 0.5s;
+}
+.main_container a:hover {
+  color: #DEDEDD;
+  background-color: #444544;
+  transform: scale(1.1);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top_container {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+.top_container .top_content {
+  background-image: url("https://e0.pxfuel.com/wallpapers/398/350/desktop-wallpaper-nillia-webdesign-web-development-management.jpg");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  color: #DEDEDD;
+  padding: 1em;
+  text-align: left;
+}
+.top_container .top_content .text-card {
+  padding-top: 140px;
+}
+.top_container .top_content .text-card .heading {
+  font-size: 3.5em;
+  margin-bottom: 0;
+}
+.top_container .top_content .text-card .para {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+.top_container .top_content .text-card a {
+  background: #333333;
+  color: whitesmoke;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  margin-top: 0;
+}
+.top_container .top_content .text-card a:hover {
+  background: #222;
+}
+
+.mem_ship_cont {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.mem_ship_cont .box {
+  background-color: #DEDEDD;
+  padding: 1em;
+  box-shadow: 0px 1px 5px #5B5A5B;
+  text-align: center;
+}
+.mem_ship_cont .box .text {
+  color: #444544;
+}
+.mem_ship_cont .box .subcription {
+  font-size: 2em;
+  margin-top: 40px;
+}
+.mem_ship_cont .box a {
+  background: #444544;
+  color: whitesmoke;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+.mem_ship_cont .box a:hover {
+  background-color: #333333;
+}
+
+.bottom_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.bottom_cards div {
+  background: #DEDEDD;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0px 1px 5px #5B5A5B;
+  transition: all 0.3s;
+}
+.bottom_cards div:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 15px #4A4A4A;
+}
+.bottom_cards i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 480px) and (max-width: 768px) {
+  .main_container .main-nav ul {
+    grid-template-columns: auto;
+  }
+  .top_container {
+    grid-template-columns: 1fr;
+    height: 73vh;
+  }
+  .mem_ship_cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bottom_cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .main_container .main-nav ul {
+    grid-template-columns: auto;
+  }
+  .top_container {
+    grid-template-columns: 1fr;
+  }
+  .mem_ship_cont {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .bottom_cards {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */

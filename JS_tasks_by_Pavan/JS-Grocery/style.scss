@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    width: 90%;
+    // height: 60%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  
+      input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+  
+      button {
+        padding: 10px 15px;
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #4cae4c;
+        }
+      }
+    }
+  
+    #grocery-container {
+      &.hidden {
+        display: none;
+      }
+  
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+          display: flex;
+          justify-content: space-between;
+          background: #f9f9f9;
+          padding: 10px;
+          border: 1px solid #ccc;
+          margin-bottom: 5px;
+          border-radius: 4px;
+  
+          span {
+            flex: 1;
+          }
+  
+          button {
+            margin-left: 10px;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+  
+            &.edit-btn {
+              background: #f0ad4e;
+              color: white;
+            }
+  
+            &.delete-btn {
+              background: #d9534f;
+              color: white;
+            }
+          }
+        }
+      }
+  
+      #clear-btn {
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #d9534f;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #c9302c;
+        }
+      }
+    }
+  }
+  

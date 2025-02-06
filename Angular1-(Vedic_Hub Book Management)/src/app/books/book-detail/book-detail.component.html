@@ -1,0 +1,37 @@
+<!-- Display a loading spinner while book details are being fetched -->
+<div *ngIf="loading" class="spinner-container">
+  <div class="spinner"></div>
+</div>
+
+<!-- Show book details only when loading is complete and a book is available -->
+<div *ngIf="!loading && book" class="book-detail">
+  <div class="book-detail-container">
+    <!-- Display the book's cover image -->
+    <img [src]="book.imageUrl" alt="{{ book.title }}" class="book-image" />
+
+    <div class="book-info">
+      <!-- Display book title -->
+      <h2>{{ book.title }}</h2>
+      <!-- Display author name -->
+      <p><strong>Author:</strong> {{ book.author }}</p>
+      <!-- Display published date -->
+      <p><strong>Published Date:</strong> {{ book.publishedDate }}</p>
+      <!-- Display book description -->
+      <p><strong>Description:</strong> {{ book.description }}</p>
+    </div>
+  </div>
+
+  <!-- Show delete button only if the book is newly added -->
+  <button *ngIf="book.isNew" (click)="onDeleteBook()" class="noselect">
+    <span class="text">Delete</span>
+    <span class="icon">
+      <!-- SVG icon for the delete button -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+      </svg>
+    </span>
+  </button>
+
+  <!-- Button to navigate back to the main home screen -->
+  <button class="home-button" (click)="navigateToHome()"> ⬅ Main Home🏡</button>
+</div>

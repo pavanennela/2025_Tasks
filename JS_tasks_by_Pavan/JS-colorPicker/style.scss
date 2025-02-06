@@ -1,0 +1,48 @@
+.container {
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .heading {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .form-control{
+            cursor: pointer;
+        }
+        
+    }
+
+    .bg-color {
+        background-color: #222;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+
+        .colorset {
+            color: #49a6e9;
+            font-weight: 700;
+        }
+    }
+
+    .para {
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 20px;
+    }
+        
+}

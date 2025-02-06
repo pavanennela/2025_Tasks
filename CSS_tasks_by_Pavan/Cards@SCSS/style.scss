@@ -1,0 +1,163 @@
+$gradient: linear-gradient(to left, rgb(86, 180, 180), rgb(207, 59, 173));
+$light-blue: #71a3c1;
+$light-green: #75ba75;
+$light-orange: #f5945c;
+$light-red: #f24d49;
+
+
+body {
+  text-align: center;
+  box-shadow: #e0e0;
+  background-color: antiquewhite;
+//   background-image: linear-gradient(to left, #e0e0,  #98d, #e1e,);
+}
+
+section {
+  div {
+    height: 8vh;
+    background-image: $gradient;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+  }
+  h1 {
+    font-size: 2vw;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    margin-bottom: 1em;
+  }
+}
+
+body > div {
+  display: inline-block;
+  margin: 0 40px;
+  height: 45vh;
+  width: 15vw;
+  position: relative;
+  border-top-left-radius: 50px;
+  box-shadow: rgb(92, 91, 91);
+  i {
+    margin-top: 30px;
+    font-size: 50px;
+    color: white;
+  }
+  div {
+    margin: 2.5vw;
+    position: absolute;
+    background-color: #ffffff;
+    height: 40vh;
+    width: 15vw;
+    box-shadow: 0 0.5rem 1rem rgb(92, 91, 91);
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+    align-items: center; /* Ensures content doesn't overflow */
+    p:nth-child(1) {
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-decoration: dotted;
+    }
+    p:nth-child(2) {
+      margin: 0 2vw;
+      font-weight: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: small;
+      text-align: left;
+    }
+  }
+}
+
+// Blocker: Apply margin adjustment only to even-numbered main divs
+section ~ div:nth-of-type(even) {
+  margin-top: 70px; // Top margin for even-numbered divs
+  top: -50px;
+  left: -30px;
+}
+
+// Specific background colors for each main div
+body > div:nth-of-type(1) {
+  background-color: $light-blue;
+}
+
+body > div:nth-of-type(2) {
+  background-color: $light-red;
+}
+
+body > div:nth-of-type(3) {
+  background-color: $light-green;
+}
+
+body > div:nth-of-type(4) {
+  background-color: $light-orange;
+}
+
+body > div:nth-of-type(1) > div {
+  bottom: -10vw;
+  left: -5vw;
+}
+
+body > div:nth-of-type(2) > div {
+  bottom: -10vw;
+  left: -0.5vw;
+}
+
+body > div:nth-of-type(3) > div {
+  bottom: -10vw;
+  left: -5vw;
+}
+
+body > div:nth-of-type(4) > div {
+  bottom: -10vw;
+  left: 0.5vw;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+  body > div {
+    width: 35vw;
+    margin:50px 20px;
+  }
+  section ~ div:nth-of-type(even) {
+    margin-top: 20px;
+    left: 0;
+  }
+
+  body > div:nth-of-type(1) > div,
+  body > div:nth-of-type(2) > div,
+  body > div:nth-of-type(3) > div,
+  body > div:nth-of-type(4) > div {
+    width: 30vw;
+    bottom: -10vw;
+    left: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body > div {
+    width: 90vw;  // Full width for mobile
+    margin: 80px 10px;  // Center divs and reduce margin
+  }
+
+  section ~ div:nth-of-type(even) {
+    top: 0;
+    left: 0;
+  }
+
+  /* Adjust positions for the divs */
+  body > div:nth-of-type(1) > div,
+  body > div:nth-of-type(2) > div,
+  body > div:nth-of-type(3) > div,
+  body > div:nth-of-type(4) > div {
+    width: 94%;
+    bottom: -18vw;
+    left: 0; 
+  }
+
+  /* Make text overflow hidden for mobile */
+  body > div div p {
+    overflow: hidden;
+  }
+}

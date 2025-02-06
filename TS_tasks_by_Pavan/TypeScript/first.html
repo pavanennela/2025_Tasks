@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9356/9356777.png" type="image/x-icon">
+
+  <title>Filter By City</title>
+  <style>
+    body {
+      /* font-family: 'Roboto', Arial, sans-serif; */
+      margin: 0;
+      padding: 0;
+      background-image: url('https://t3.ftcdn.net/jpg/08/84/08/58/240_F_884085840_9OjE0loAulfgHgKeiH7f4vwbv68Ei0hz.jpg');
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 1.5rem;
+      color: #3593b8;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(14, 13, 13, 0.3);
+      font-weight: bold;
+    }
+    .input_button_fields {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 12px;
+      width: 75%;
+      margin-right: 10px;
+      font-size: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+    input:focus {
+      border-color: #4CAF50;
+      outline: none;
+    }
+    input::placeholder {
+      color: #999;
+    }
+    button {
+      padding: 12px;
+      width: 20%;
+      height: 45px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #3593b8;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    button:hover {
+      background-color: #373d59;
+      transform: scale(1.05); /* Slight zoom effect */
+    }
+    button:active {
+      transform: scale(1); /* Reset zoom effect when button is pressed */
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    li {
+      background: #f0f0f0;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    li:nth-child(odd) {
+      background: #e9f7ef;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <h1>Find My t.a.c Team People by City / Name</h1>
+
+    <!-- Input field and button container -->
+    <div class="input_button_fields"> 
+      <input type="text" id="cityInput" placeholder="Enter City / Person name" /> <!-- Input box for entering the city name -->
+      <button id="filterButton">Search</button> <!-- Button to trigger the filter action -->
+    </div>
+
+    <!-- Unordered list to display the filter results dynamically -->
+    <ul id="results"></ul>
+
+  </div>
+
+  <script src="first.js"></script>
+</body>
+</html>

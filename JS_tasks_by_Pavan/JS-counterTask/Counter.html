@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive by setting the viewport's width to the device's width -->
+        <link rel="stylesheet" href="./style/style.css"> <!-- Links an external CSS file (style.scss) to style the page -->
+        <title>Counter-JS</title> <!-- Sets the title of the page that appears on the browser tab -->
+    
+    </head>
+    <body>
+        <div class="container"> <!-- A div that wraps the entire content of the counter application -->
+            
+            <h1>Counter</h1> <!-- Header displaying the title "Counter" -->
+
+            <span id="counterId">0</span> <!-- Span that holds the current counter value, initially set to 0 -->
+            
+            <div class="btn-container"> <!-- Div that contains the buttons for interacting with the counter -->
+                
+                <button class="btn decrease"> <!-- Button for decreasing the counter value -->
+                    Decrease
+                </button>
+                
+                <button class="btn reset"> <!-- Button for resetting the counter value to 0 -->
+                    Reset
+                </button>
+                
+                <button class="btn increase"> <!-- Button for increasing the counter value -->
+                    Increase
+                </button>
+            
+            </div>
+        </div>
+
+        <script src="counter.js"></script> <!-- Links to an external JavaScript file (counter.js) that handles the functionality of the counter -->
+    
+    </body>
+
+ </html>

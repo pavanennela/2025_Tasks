@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic JavaScript Operations</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>JavaScript Interactive Playground</h1>
+
+        <!-- String Section -->
+        <div id="stringSection">
+            <h2>String  Methods:-</h2>
+            <input type="text" id="stringInput" placeholder="Enter a string" />
+            <div>
+                <button id="reverseStringBtn">Reverse</button>
+                <button id="toUpperCaseBtn">To Uppercase</button>
+                <button id="toLowerCaseBtn">To Lowercase</button>
+                <button id="charAtBtn">Char at 2</button>
+                <button id="concatBtn">Concat " World!"</button>
+                <button id="replaceBtn">Replace "a" with "@"</button>
+                <p id="stringOutput"></p>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Function Section -->
+        <div id="functionSection">
+            <h2>Function  Methods:-</h2>
+            <input type="number" id="numberInput" placeholder="Enter a number" />
+            <div>
+                <button id="factorialBtn">Factorial</button>
+                <button id="isPrimeBtn">Check Prime</button>
+                <button id="sumOfDigitsBtn">Sum of Digits</button>
+                <p id="functionOutput"></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Object Section -->
+        <div id="objectSection">
+            <h2>Object  &  Loop Operations:-</h2>
+
+            <!-- Show and loop object -->
+            <button id="showObjectBtn">Show Object</button>
+            <button id="loopObjectBtn">Loop Through Object</button>
+
+            <!-- Input fields for object updates -->
+            <h3>Update Object:</h3>
+            <input type="text" id="nameInput" placeholder="Enter Name" />
+            <input type="number" id="ageInput" placeholder="Enter Age" />
+            <input type="text" id="occupationInput" placeholder="Enter Occupation" />
+            <button id="updateObjectBtn">Update Object</button>
+
+            <!-- Output -->
+            <p id="objectOutput"></p>
+        </div>
+
+
+    </div>
+
+    <script src="dynamic.js"></script>
+</body>
+
+</html>

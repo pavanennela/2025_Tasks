@@ -1,0 +1,53 @@
+.header {
+  background-color: #588cc3;
+  padding: 10px;
+  color: white;
+  background-position: fixed;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  font-weight: bold;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+
+.active-link {
+  font-weight: bold;
+  background-color: bisque;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Added shadow effect for active links */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover animation */
+}
+
+/* Hover Effect on Active Link */
+.active-link:hover {
+  transform: scale(1.05); /* Slightly enlarges on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Increases shadow on hover */
+}
+
+/* Non-Active Links */
+.not-active {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s ease, text-shadow 0.2s ease; /* Smooth animation for hover */
+}
+
+/* Hover Effect on Non-Active Links */
+.not-active:hover {
+  color: bisque;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adds shadow on hover */
+}

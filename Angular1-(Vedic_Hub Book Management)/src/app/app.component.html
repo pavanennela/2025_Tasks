@@ -1,0 +1,26 @@
+<div class="container">
+  <header>
+    <div class="header-content">
+      <!-- Logo / Title -->
+      <div class="logo">
+        <img src="https://files.oaiusercontent.com/file-2bEC4UX4s5k4PvFM8sWbyU?se=2025-02-04T07%3A15%3A52Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D223f0f19-15cd-4f6b-9429-294bbcdc1f9a.webp&sig=4PCQ042uS1ZMDF6HzoSWhp1850V383aw803njvFadOY%3D" 
+          class="logo-img" routerLink="/books"/>
+        <span class="logo-text">Vedic  Hub🚩</span>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a routerLink="/books" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home 🏡</a></li>
+          <li><a routerLink="/add-book" routerLinkActive="active">Add a Book 📚</a></li>
+          <!-- <li><a routerLink="book/:id" routerLinkActive="active" >Details 📖</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Renders the active component based on the current route -->
+    <router-outlet></router-outlet>
+  </main>
+</div>

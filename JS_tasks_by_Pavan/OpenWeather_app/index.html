@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design for mobile devices -->
+  <title>Weather App</title> <!-- Sets the title of the webpage -->
+  
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="./style/style.css"> <!-- Links to the stylesheet for styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body">
+  <h2 class="header">Weather at a Glance 🌅</h2>  
+  <!-- Main Container for the Weather App -->
+  <div class="weather-container">
+
+    <div>
+      <!-- Search Bar Section -->
+      <div class="search-bar">
+        <!-- Input Field for City Name -->
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Please Enter City Name Here..."
+        />
+        <!-- Button to Trigger the Search -->
+        <button id="search-button"><i class="fa-solid fa-magnifying-glass-location"></i></button>
+      </div>
+  
+      <!-- Left Panel for Current Weather -->
+      <div class="top-panel">
+        <!-- Date and Location Information -->
+        <div class="date-info">
+          <h2 id="day"></h2> <!-- Displays the day (e.g., Monday) -->
+          <p id="date"></p> <!-- Displays the current date -->
+          <p id="location"></p> <!-- Displays the city and country -->
+        </div>
+  
+        <!-- Weather Information -->
+        <div class="weather-info">
+          <div class="temperature">
+            <h1 id="temp"></h1> <!-- Displays the temperature (e.g., 25°C) -->
+            <p id="weather-condition"></p> <!-- Displays the weather condition (e.g., Clear) -->
+          </div>
+          <div class="icon" id="weather-icon"></div> <!-- Placeholder for a weather icon -->
+        </div>
+      </div>
+  
+      <!-- Right Panel for Additional Info and Forecast -->
+      <div class="bottom-panel">
+        <!-- Additional Weather Details -->
+        <div class="additional-info">
+          <p>PRECIPITATION: <span id="precipitation"></span></p> <!-- Displays precipitation data -->
+          <p>HUMIDITY: <span id="humidity"></span></p> <!-- Displays humidity percentage -->
+          <p>WIND-SPEED: <span id="wind"></span></p> <!-- Displays wind speed -->
+        </div>
+  
+        <!-- Weather Forecast for the Next Few Days -->
+        <div class="forecast">
+          <!-- Day 1 Forecast -->
+          <div class="forecast-day">
+            <span>Day 1</span> <!-- Label for the day -->
+            <span id="forecast-temp1"></span> <!-- Displays temperature for Day 1 -->
+          </div>
+          <!-- Day 2 Forecast -->
+          <div class="forecast-day">
+            <span>Day 2</span>
+            <span id="forecast-temp2"></span> <!-- Displays temperature for Day 2 -->
+          </div>
+          <!-- Day 3 Forecast -->
+          <div class="forecast-day">
+            <span>Day 3</span>
+            <span id="forecast-temp3"></span> <!-- Displays temperature for Day 3 -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- JavaScript File -->
+  <script src="style.js"></script> <!-- Links to the JavaScript file for app functionality -->
+</body>
+</html>

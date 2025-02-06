@@ -1,0 +1,75 @@
+.counter-container {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.count-display {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100px;
+  margin: 20px auto;
+  color: grey; /* Default color for 0 */
+  transition: transform 0.5s ease; /* Smooth rotation and color change */
+  display: inline-block;
+}
+
+.count-display:hover {
+  transform: rotate(-360deg); /* Rotate 360 degrees */
+}
+
+.count-display.positive {
+  color: green;
+}
+
+.count-display.negative {
+  color: red;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inc-counter-btn,
+.dec-counter-btn,
+.reset-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effects for increment and decrement buttons */
+.inc-counter-btn:hover {
+  background-color: #57eb9e;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.dec-counter-btn:hover {
+  background-color: #ec4343;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Hover effect for reset button */
+.reset-btn {
+  color: black;
+}
+
+.reset-btn:hover {
+  background-color: grey;
+  color: white;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}

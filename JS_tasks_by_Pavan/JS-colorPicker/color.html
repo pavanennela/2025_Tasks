@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>JS-Color Picker</title> <!--Title of the webpage in browser -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Main Container for color picker -->
+    <div id="colorPickerContainer" class="container d-flex flex-column justify-content-center align-items-center">
+        
+        <!-- Heading of the page -->
+        <h2 class="heading text-center">Dynamic - Background Color Picker</h2>
+        
+        <!-- Input group for selecting and applying a custom color -->
+        <div class="input-group mb-3 w-50">
+            
+            <!-- A color input field that lets users pick a custom color -->
+            <input type="color" id="colorInput" class="form-control" />
+            
+            <!-- A button to applu the selected custom color -->
+            <button class="btn btn-info" onclick="applyBackgroundColor()">Apply Custom Color</button>         
+        </div>
+        
+        <!-- A button to apply a random color -->
+        <button id="randomColorBtn" onclick="applyRandomColor()" class="btn btn-success mb-3">Apply Random Color</button>
+        
+        <!-- Paragraph to display the currently selected color and also span for displays HEX code of current bg-color -->
+        <p class="bg-color text-center">Selected Background Color: <span class="colorset" id="selectedColorHexCode">#ffffff</span></p>
+        
+        <!-- Informative para for the user -->
+        <p class="para text-center">Pick a color and apply it to change the background color of the page!
+            <br>
+            And also u can pick a random color.
+        </p>
+    </div>
+
+    <!-- Link the external JS file -->
+    <script src="color.js"></script>
+</body>
+
+</html>

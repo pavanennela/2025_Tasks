@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.container .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container .input-group .form-control {
+  cursor: pointer;
+}
+.container .bg-color {
+  background-color: #222;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.container .bg-color .colorset {
+  color: #49a6e9;
+  font-weight: 700;
+}
+.container .para {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */

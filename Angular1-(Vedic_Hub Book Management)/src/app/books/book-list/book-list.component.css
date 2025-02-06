@@ -1,0 +1,122 @@
+.book-description {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://files.oaiusercontent.com/file-FRnVXJ5dv2ypaywFWhp5Q8?se=2025-02-04T07%3A08%3A39Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dd8aaa8cd-13ae-4cb1-b8db-575626a8d9af.webp&sig=BNzIqK/9%2B58minM4sIHubk5j3RvH4VGXaNSRoN5z2eo%3D');
+  background-size: cover;
+  color: #f5f5dc; /* Light beige for contrast */
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Georgia', serif; /* Traditional, elegant font */
+}
+
+/* Heading Styling */
+.book-description h2 {
+  font-size: 28px;
+  color: #ffd700; /* Golden color for a divine look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+  text-decoration: underline;
+  font-family: 'Garamond', serif;
+}
+
+/* Paragraph Styling */
+.book-description p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e6e6fa; /* Soft lavender for a mystical feel */
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  text-shadow: 1px 1px 2px rgba(11, 11, 11, 0.3);
+}
+
+
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates four columns */
+  gap: 20px; /* Adds space between cards */
+  padding: 20px;
+  transition: all 0.3s ease-in-out; /* Smooth transition for the whole book list */
+}
+
+.book-card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.book-card:hover {
+  transform: translateY(-10px); /* Smooth lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.book-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.book-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.book-title {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Common Styles for Both Sections */
+.existing-books-section, .new-books-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.existing-books-section h2 {
+  color: #653232;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px solid #7a7b7d;
+}
+
+.new-books-section h2 {
+  color: #653232; /* Highlight new books */
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px solid #7a7b7d;
+}
+
+@media (max-width: 1200px) {
+  .book-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .book-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .book-list {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}

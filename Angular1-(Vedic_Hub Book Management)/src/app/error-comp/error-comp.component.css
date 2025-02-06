@@ -1,0 +1,49 @@
+/* Error Page Container */
+.error-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 50px 20px;
+    color: #333;
+  }
+  
+  /* Large 404 Number */
+  .error-container h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: #e74c3c; /* Red for error indication */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Error Message */
+  .error-container h2 {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+  
+  /* Subtext */
+  .error-container p {
+    font-size: 18px;
+    color: #666;
+    max-width: 500px;
+    margin: 10px auto;
+  }
+  
+  /* Go Home Button */
+  .home-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #386643;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .home-button:hover {
+    background-color: #56b26b;
+    transform: scale(1.05);
+  }
+  

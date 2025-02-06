@@ -1,0 +1,102 @@
+$primary: #ddd;
+$dark: #333;
+$light: #fff;
+$shadow: 5px 5px 5px rgb(43, 42, 42);
+
+body {
+  background: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+// Feature Card
+.feature-card {
+  background-image: url('https://e0.pxfuel.com/wallpapers/398/350/desktop-wallpaper-nillia-webdesign-web-development-management.jpg');
+  height: 63vh;
+  box-shadow: $shadow;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+header {
+  nav {
+    .nav-item {
+      color: $dark;
+      background-color: $light;
+      // font-weight: bold;
+      text-transform: uppercase;
+      border: 2px solid $primary;
+      border-radius: 5px;
+      padding: 0.5rem;
+      border-style: outset;
+      width: 100%;
+
+      &:hover {
+        background-color: $primary;
+        color: $dark;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+// Price Boxes
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+// Boxes Section
+.box {
+  border-radius: 0.0;
+
+  &:hover {
+    color: $dark;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+
+  i {
+    margin-bottom: 1rem;
+    color: $dark;
+  }
+}
+
+//Navigation
+// .navbar-nav .nav-link {
+//   font-size: 1rem;
+//   text-transform: uppercase;
+//   text-align: center;
+//   border: 1px solid black;
+//   &:hover {
+//     color: $dark;
+//   }
+// }
+
+// .nav-link{
+//   width: 80%;
+
+// }
+
+// header {
+//   nav {
+//     div {
+//       a {
+//         color: black;
+//         background-color: $item-bg;
+//         font-weight: 500;
+//         border-radius: 5px;
+//         .nav-item{
+//           color: #333;
+//         }
+//       }
+//     }
+//   }
+// }

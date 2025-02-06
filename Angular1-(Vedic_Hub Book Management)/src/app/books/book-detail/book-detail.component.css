@@ -1,0 +1,164 @@
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #386643;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.book-detail {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.book-detail-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between image and details */
+}
+
+.book-image {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.book-info {
+  flex: 1; /* Take up the remaining space */
+}
+
+.book-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.book-info p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+
+/* .delete-button {
+  background-color: #ea3f3fce;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+} */
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+  margin-top: 20px;
+  margin-right: 5px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  background: #e62222;
+ }
+ 
+ button, button span {
+  transition: 200ms;
+ }
+ 
+ button .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+ }
+ 
+ button .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ button svg {
+  width: 15px;
+  fill: #eee;
+ }
+ 
+ button:hover {
+  background: #ff3636;
+ }
+ 
+ button:hover .text {
+  color: transparent;
+ }
+ 
+ button:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+ }
+ 
+ button:focus {
+  outline: none;
+ }
+ 
+ button:active .icon svg {
+  transform: scale(0.8);
+ }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .book-detail-container {
+    flex-direction: column; /* Stack image and details on smaller screens */
+    align-items: center;
+  }
+
+  .book-image {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+.home-button {
+  background-color: #386643;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.home-button:hover {
+  background-color: #56b26b;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grocery - JS</title> <!-- The title of the webpage -->
+        <link rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all.min.css" />
+        <link rel="stylesheet" href="./style/style.css" /> <!-- Link to custom stylesheet -->
+    </head>
+    <body>
+        
+        <div class="container">
+            
+            <h2>Grocery List</h2> <!-- Main heading of the webpage -->
+            
+            <form id="grocery-form"> <!-- Form for adding grocery items -->
+              <input type="text" id="grocery-input" placeholder="e.g. Apples" /> <!-- Input field for entering grocery items -->
+              <button type="submit" id="add-btn">Add</button> <!-- Button to submit the form and add items -->
+            </form>
+            
+            <!-- Container for displaying the list and actions -->
+            <div id="grocery-container" class="hidden">
+              <ul id="grocery-list"></ul> <!-- Unordered list to display grocery items -->
+              <button id="clear-btn">Clear All</button> <!-- Button to clear all items from the list -->
+            </div>
+          </div>
+
+        <script src="grocery.js"></script> <!-- Link to the JavaScript file for functionality -->
+    </body>
+</html>

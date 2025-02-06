@@ -1,0 +1,65 @@
+.history-container {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.history-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.history-stats {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.history-stats p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+  padding: 10px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #f7f7f7, #ffffff);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: default; /* Adds interactivity feel */
+}
+
+.history-stats p:hover {
+  transform: scale(1.03); /* Slight zoom on hover */
+  background-color: #e8e8e8; /* Highlighted effect on hover */
+}
+
+.history-stats p:nth-child(1) {
+  font-weight: bold;
+  color: #31ba73;
+  border-left: 5px solid #31ba73;
+}
+
+.history-stats p:nth-child(2) {
+  font-weight: bold;
+  color: #ec4343;
+  border-left: 5px solid #ec4343;
+}
+
+.history-stats p:nth-child(3) {
+  font-weight: bold;
+  color: #716665;
+  border-left: 5px solid #716665;
+}
+
+

@@ -1,0 +1,41 @@
+<!-- Show Book List when no book is selected -->
+<div *ngIf="!selectedBook">
+  <div class="book-description">
+    <h2>Indian Mythology Books</h2>
+    <p>
+      Indian mythology is a vast and intricate collection of stories, legends, and sacred texts that shape the spiritual and cultural heritage of India.
+      It includes epics like the <strong>Mahabharata</strong> and <strong>Ramayana</strong>, and numerous stories of gods, goddesses, and divine beings.
+      These books offer deep philosophical insights, heroic adventures, and lessons on dharma (duty), karma, and devotion.
+    </p>
+  </div>
+
+  <!-- Existing Books Section -->
+  <div class="existing-books-section">
+    <h2>Available Books 📜🔱</h2>
+    <div class="book-list">
+      <div *ngFor="let book of books" (click)="onSelectBook(book)" class="book-card">
+        <img [src]="book.imageUrl" alt="{{ book.title }}" class="book-image" />
+        <div class="book-title">{{ book.title }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newly Added Books Section -->
+  <div *ngIf="newBooks.length > 0" class="new-books-section">
+    <h2>Newly Added Books 📚✨</h2>
+    <div class="book-list">
+      <div *ngFor="let book of newBooks" (click)="onSelectBook(book)" class="book-card">
+        <img [src]="book.imageUrl" alt="{{ book.title }}" class="book-image" />
+        <div class="book-title">{{ book.title }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Show Book Detail when a book is selected -->
+<app-book-detail
+  *ngIf="selectedBook"
+  [book]="selectedBook"
+  (bookDeleted)="onBookDeleted($event)"
+  (backToHome)="onBackToHome()">
+</app-book-detail>
