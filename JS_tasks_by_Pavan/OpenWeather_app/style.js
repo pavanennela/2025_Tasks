@@ -1,4 +1,4 @@
-const API_KEY = '6348efad2869cf9f0077408b52c59f8c'; // Your OpenWeatherMap API key
+const API_KEY = 'Your API KEY'; // Your OpenWeatherMap API key
 
 // Add event listener to the search button to fetch weather when clicked
 document.getElementById('search-button').addEventListener('click', () => {
